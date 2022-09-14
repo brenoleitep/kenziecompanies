@@ -1,0 +1,269 @@
+.modal__login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand1);
+    width: 80%;
+    max-width: 450px;
+    height: 431px;
+    gap: 20px;
+    z-index: 1;
+    top: -500%;
+    border-radius: 6px;
+    position: fixed;
+    transition: 850ms;
+    color: var(--whiteFixed);
+}
+
+.modal__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.modal__login form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.modal__login form input {
+    width: 80%;
+    max-width: 360px;
+    border-radius: 6px;
+}
+
+.form__button--login:hover {
+    background-color: white;
+    cursor: pointer;
+    color: var(--grey-opacity-1);
+}
+
+.form__button--login {
+    padding: 4px;
+    width: 80%;
+    max-width: 110px;
+    height: 42px;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--grey3);
+}
+
+.modal__cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand1);
+    width: 80%;
+    max-width: 480px;
+    height: 511px;
+    gap: 20px;
+    border-radius: 6px;
+    position: fixed;
+    top: -500%;
+    transform: 850ms;
+    z-index: 1;
+    color: var(--whiteFixed);
+
+}
+
+.modal__cadastro form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.modal__cadastro form input {
+    width: 80%;
+    max-width: 360px;
+    border-radius: 6px;
+}
+
+.form__button--cadastrar {
+    padding: 4px;
+    width: 80px;
+    height: 34px;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--grey3);
+}
+
+.form__button--cadastrar:hover {
+    background-color: white;
+    cursor: pointer;
+    color: var(--grey-opacity-1);
+}
+
+.form__button--cadastre {
+    padding: 4px;
+    width: 166px;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--grey-opacity-1);
+}
+
+.form__button--cadastre:hover {
+    background-color: white;
+    cursor: pointer;
+    color: var(--grey-opacity-1);
+}
+
+.modal__empresa {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    max-width: 480px;
+    height: 310px;
+    border-radius: 6px;
+    z-index: 2;
+    position: relative;
+    bottom: 500px;
+    background-color: var(--brand1);
+    color: white;
+    transition: 850ms;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 100%;
+}
+
+.modal__profile {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    max-width: 480px;
+    height: 430px;
+    border-radius: 6px;
+    z-index: 2;
+    position: fixed;
+    top: -500%;
+    background-color: var(--brand1);
+    color: white;
+    transition: 850ms;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 100%;
+}
+
+.modal__profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.modal__profile form input {
+    width: 80%;
+    max-width: 360px;
+    border-radius: 6px;
+}
+
+.form__button--dados:hover {
+    background-color: white;
+    cursor: pointer;
+    color: var(--grey-opacity-1);
+}
+
+.form__button--dados {
+    padding: 4px;
+    width: 80%;
+    max-width: 110px;
+    height: 42px;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--grey3);
+}
+
+.modal__create, .modal__editDepartment, .modal__delet, .modal__hireDev, .modalHire, .modal__dismiss {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+    max-width: 480px;
+    height: 430px;
+    border-radius: 6px;
+    z-index: 2;
+    position: fixed;
+    top: -500%;
+    background-color: var(--brand1);
+    color: white;
+    transition: 850ms;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 100%;
+}
+
+.modal__create form, .modal__editDepartment form, .modal__delet form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.modal__create form input, .modal__editDepartment form input, .modal__delet form input, .modalHire input, .modal__dismiss input {
+    width: 80%;
+    max-width: 360px;
+    border-radius: 6px;
+}
+
+.form__button--create:hover {
+    background-color: white;
+    cursor: pointer;
+    color: var(--grey-opacity-1);
+}
+
+.modalHire button {
+    width: 170px;
+    height: 38px;
+    color: white;
+    background-color: green;
+
+}
+
+.form__button--create, .form__button--edit, .form__button--delet, .form__button--hire, .btnDismiss {
+    padding: 4px;
+    width: 80%;
+    max-width: 110px;
+    height: 42px;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--grey3);
+}
+
+.form__button--hire {
+    padding: 4px;
+    width: 200px;
+    max-width: 110px;
+    height: 42px;
+    border-radius: 3px;
+    color: white;
+    background-color: green;
+}
+
+.modal__depart--close, .modal__edit--close, .modal__delet--close, .modal__hire--close, .close__modal{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.showModal {
+    top: 120px;
+    font-size: 14px;
+    transition: 850ms;
+}
+
+.desfocus {
+    opacity: 30%;
+}

@@ -1,0 +1,141 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--whiteFixed);
+    height: 88px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    box-shadow: 1px -1px 1px 1px var(--brand1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 24px 0px 24px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--brand1);
+}
+
+header nav span {
+    cursor: pointer;
+}
+
+header nav div {
+    display: flex;
+    gap: 10px;
+}
+
+.nav__btn {
+    background-color: var(--whiteFixed);
+    padding: 0 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav__login {
+    cursor: pointer;
+}
+
+.nav__cadastro {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    gap: 35px;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+
+footer {
+    display: flex;
+    margin-top: 200px;
+    padding: 15px;
+    box-shadow: 0px -3px 1px -3px var(--brand1);
+    justify-content: center;
+}
+
+.footer__all {
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer__first-colunm {
+    display: flex;
+    gap: 10px;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    height: 190px;
+    width: 100px;
+}
+
+.footer__first-colunm img {
+    width: 36px;
+    height: 36px;
+}
+
+.footer__network {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.footer__second-colunm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 190px;
+
+}
+
+.footer__third-colunm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 190px;
+
+}
+
+.footer__third-colunm figure  {
+    display: flex;
+    gap: 5px;
+}
+
+.footer__third-colunm figure img {
+    width: 18px;
+    height: 18px;
+
+}
+
+@media (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__all {
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+    }
+}

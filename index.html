@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="/src/styles/inputs.css">
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <link rel="stylesheet" href="/src/styles/modal.css">
+    <link rel="stylesheet" href="/src/styles/colors.css">
+    <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <title>Kenzie Empresas</title>
+</head>
+
+<body>
+    <header class="header__homepage">
+        <nav class="header__nav">
+            <h1 class="title2">Kenzie Empresas</h1>
+            <div>
+                <span class="text1 nav__login">Login</span>
+                <span class="text1 nav__cadastro">Cadastro</span>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main__homepage">
+
+
+        <section class="main__sectionFirst">
+            <div class="section__text">
+                <span class="text3">
+                    Somos a Kenzie Empresas
+                </span>
+
+                <h1 class="title1">Contratamos, apoiamos. <br> Do seu jeito.</h1>
+
+                <p class="text1">Nosso objetivo é levar um desenvolvedor da melhor forma ao mercado de trabalho, sempre
+                    com qualidade e segurança na hora de escolher a melhor empresa para você</p>
+            </div>
+
+            <div class="section__img">
+                <img src="/src/assets/office.jpg" alt="office">
+            </div>
+
+        </section>
+
+
+        <div class="modal modal__login">
+            <p class="modal__close title2">X</p>
+            <h2 class="title2">Login</h2>
+
+            <form>
+                <input type="email" placeholder="Seu e-mail" required class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--email">
+                <input type="password" required placeholder="Sua senha"
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--pass">
+                <button class="text2 form__button form__button--login">Logar</button>
+
+                <span class="text1 callCadastre">Ainda não possui cadastro</span>
+
+                <button class="text2 form__button form__button--cadastre">Ir para página de registro</button>
+            </form>
+        </div>
+
+        <div class="modal modal__cadastro">
+            <h2 class="title2">Cadastre-se</h2>
+
+            <form>
+                <input type="email" placeholder="Seu e-mail"
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputCad--email" required>
+                <input type="password"  placeholder="Sua senha"
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputCad--pass" required>
+                <input type="text" placeholder="Seu username"
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputCad--username"
+                    required>
+                <input type="text" placeholder="Seu nível"
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputCad--prof" required>
+                <button class="text2 form__button form__button--cadastrar">Cadastrar</button>
+
+                <span class="text1 callCadastre">Ainda não possui cadastro</span>
+
+                <button class="text2 form__button form__button--cadastre form__button--cadLog">Ir para página de
+                    login</button>
+            </form>
+        </div>
+
+
+        <section class="main__section" id="filtro">
+
+            <h2 class="title1">Empresas Cadastradas</h2>
+
+            <select class="section__list text1">
+
+            </select>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__all">
+            <div class="footer__first-colunm">
+                <h2 class="title2">Kenzie Empresas</h2>
+
+                <div class="footer__network">
+                    <span class="text2"><strong>Siga nossas redes sociais</strong></span>
+                    <img src="/src/assets/facebook (1).png" alt="Facebook">
+                    <img src="/src/assets/instagram.png" alt="Instagram">
+                    <img src="/src/assets/linkedin.png" alt="Linkedin">
+                    <img src="/src/assets/twitter.png" alt="Twitter">
+                </div>
+            </div>
+
+            <div class="footer__second-colunm">
+                <span class="text2"> <strong>Institucional</strong></span>
+                <p class="text2">Sobre nós</p>
+                <p class="text2">Carreiras</p>
+                <p class="text2">Ética</p>
+                <p class="text2">Privacidade</p>
+            </div>
+
+
+            <div class="footer__third-colunm">
+                <span class="text2"> <strong>Escritórios</strong></span>
+                <figure>
+                    <img src="/src/assets/pin.png" alt="localização">
+                    <p class="text2">Salvador</p>
+                </figure>
+
+                <figure>
+                    <img src="/src/assets/pin.png" alt="localização">
+                    <p class="text2">Rio de Janeiro</p>
+                </figure>
+
+                <figure>
+                    <img src="/src/assets/pin.png" alt="localização">
+                    <p class="text2">São Paulo</p>
+                </figure>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="/src/controllers/index.js"></script>
+</body>
+
+</html>

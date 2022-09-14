@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/dashboardAdmin.css">
+    <link rel="stylesheet" href="/src/styles/dashboardUser.css">
+
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="/src/styles/inputs.css">
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <link rel="stylesheet" href="/src/styles/modal.css">
+    <link rel="stylesheet" href="/src/styles/colors.css">
+    <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <title>Kenzie Empresas</title>
+</head>
+<body>
+    <header class="header__homepage">
+        <nav class="header__nav">
+            <h1 class="title2">Kenzie Empresas</h1>
+            <ul class="header__texts">
+                <span class="text1 nav__profile">Alterar dados</span>
+                <span class="text1 nav__editDepartment">Editar departamento</span>
+                <span class="text1 nav__deletDepartment">Deletar departamento</span>
+                <span class="text1 nav__dismiss">Demitir funcionário</span>
+                <span class="text1 nav__create">Criar departamento</span>
+
+                <span class="text1 nav__out">Sair</span>
+            </ul>
+
+            <div class="header__img">
+                <img src="/src/assets/simbolo-de-interface-de-lista.png" alt="lista" class="header__img--list">
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <div class="modal modal__profile">
+            <p class="modal__close title2">X</p>
+            <h2 class="title2">Novos dados</h2>
+
+            <form>
+                <input type="text" placeholder="Novo e-mail" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--email">
+                <input type="text" placeholder="Novo user" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--user">
+                <input type="password" placeholder="Nova senha" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--pass">
+                <button class="text2 form__button form__button--dados">Alterar dados</button>
+            </form>
+        </div>
+
+        <div class="modal modal__create">
+            <p class="modal__depart--close title2">X</p>
+            <h2 class="title2">Criar departamento</h2>
+
+            <form>
+                <input type="text" placeholder="Nome do Departamento" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__input--name">
+                <input type="text" placeholder="Descrição" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--descrip">
+                    <input type="text" placeholder="Id da compania" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__input--companieId">
+                <button class="text2 form__button form__button--create">Criar departamento</button>
+            </form>
+        </div>
+
+        <div class="modal modal__delet">
+            <p class="modal__delet--close title2">X</p>
+            <h2 class="title2">Deletar departamento</h2>
+
+            <form>
+                <input type="text" placeholder="Id do Departamento" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__input--delet">
+                <button class="text2 form__button form__button--delet">Deletar departamento</button>
+            </form>
+        </div>
+
+
+        <div class="modal modal__editDepartment">
+            <p class="modal__edit--close title2">X</p>
+            <h2 class="title2">Editar departamento</h2>
+
+            <form>
+                <input type="text" placeholder= "Nova Descrição" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__input--newDescrip">
+                    <input type="text" placeholder="Id do departamento" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__input--id">
+                <button class="text2 form__button form__button--edit">Editar departamento</button>
+            </form>
+        </div>
+
+        <div class="modal modal__profile">
+            <p class="modal__close title2">X</p>
+            <h2 class="title2">Novos dados</h2>
+
+            <form>
+                <input type="text" placeholder="Novo e-mail" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--email">
+                <input type="text" placeholder="Novo user" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--user">
+                <input type="password" placeholder="Nova senha" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--pass">
+                <button class="text2 form__button form__button--dados">Alterar dados</button>
+                <button class="text2 form__button form__button--delete">Deletar usuário</button>
+            </form>
+        </div>
+
+        <div class="modal modal__hireDev"> 
+            <p class="modal__hire--close title2">X</p>
+            <h2 class="title2">Informações do dev</h2>
+            <ul class="modal__hireDev--ul"> 
+                
+
+            </ul>
+
+            <form>
+                <button class="text2 form__button form__button--hire">Contratar</button>
+            </form>
+
+        </div>
+
+
+        <section class="main__sectionFirst">
+            <div class="section__text">
+                <span class="text3">
+                    Olá, admin!
+                </span>
+
+                <h1 class="title1"> Bem vindo a sua área</h1>
+
+                <p class="text1">Aqui é o local onde você consegue editar empresas, setores, contratar e demitir funcionário, listar e criar empresas.</p>
+            </div>
+
+            <div class="section__img">
+                <img src="/src/assets/programmer.jpg" alt="office">
+            </div>
+
+        </section>
+
+        <section class="section__companie"> 
+            <h2 class="title2">Veja aqui todas as empresas criadas</h2>
+
+            <div class="section__companie--div">
+                <ul class="section__companie--ul"> 
+
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="section__contract"> 
+            <h2 class="title2">Veja aqui todos os devs disponíveis no mercado</h2>
+
+            <div class="section__contract--div">
+                <ul class="section__contract--ul"> 
+
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="section__department"> 
+            <h2 class="title2">Veja aqui todos os departamentos</h2>
+
+            <div class="section__department--div">
+                <ul class="section__department--ul"> 
+
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="section__sector"> 
+            <h2 class="title2">Veja aqui todos os setores</h2>
+
+            <div class="section__sector--div">
+                <ul class="section__sector--ul"> 
+
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="footer__all">
+            <div class="footer__first-colunm">
+                <h2 class="title2">Kenzie Empresas</h2>
+
+                <div class="footer__network">
+                    <span class="text2"><strong>Siga nossas redes sociais</strong></span>
+                    <img src="/src/assets/facebook (1).png" alt="Facebook">
+                    <img src="/src/assets/instagram.png" alt="Instagram">
+                    <img src="/src/assets/linkedin.png" alt="Linkedin">
+                    <img src="/src/assets/twitter.png" alt="Twitter">
+                </div>
+            </div>
+
+            <div class="footer__second-colunm">
+                <span class="text2"> <strong>Institucional</strong></span>
+                <p class="text2">Sobre nós</p>
+                <p class="text2">Carreiras</p>
+                <p class="text2">Ética</p>
+                <p class="text2">Privacidade</p>
+            </div>
+
+
+            <div class="footer__third-colunm">
+                <span class="text2"> <strong>Escritórios</strong></span>
+                <figure>
+                    <img src="/src/assets/pin.png" alt="localização">
+                    <p class="text2">Salvador</p>
+                </figure>
+
+                <figure>
+                    <img src="/src/assets/pin.png" alt="localização">
+                    <p class="text2">Rio de Janeiro</p>
+                </figure>
+
+                <figure>
+                    <img src="/src/assets/pin.png" alt="localização">
+                    <p class="text2">São Paulo</p>
+                </figure>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/controllers/scriptAdmin.js"></script>
+</body>
+</html>

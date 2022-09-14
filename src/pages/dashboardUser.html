@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="/src/styles/reset.css">
+    <link rel="stylesheet" href="/src/styles/dashboardUser.css">
+    <link rel="stylesheet" href="/src/styles/buttons.css">
+    <link rel="stylesheet" href="/src/styles/inputs.css">
+    <link rel="stylesheet" href="/src/styles/globalStyles.css">
+    <link rel="stylesheet" href="/src/styles/modal.css">
+    <link rel="stylesheet" href="/src/styles/colors.css">
+    <link rel="stylesheet" href="/src/styles/index.css">
+    <link rel="stylesheet" href="/src/styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <title>Kenzie Empresas</title>
+</head>
+
+<body>
+
+    <header class="header__homepage">
+        <nav class="header__nav">
+            <h1 class="title2">Kenzie Empresas</h1>
+            <div>
+                <span class="text1 nav__profile">Alterar dados</span>
+                <span class="text1 nav__out">Sair</span>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="modal modal__profile">
+            <p class="modal__close title2">X</p>
+            <h2 class="title2">Novos dados</h2>
+
+            <form>
+                <input type="text" placeholder="Novo e-mail" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--email">
+                <input type="text" placeholder="Novo user" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--user">
+                <input type="password" placeholder="Nova senha" required
+                    class="inputDefault .inputDefault::placeholder .inputDefault:active form__inputLog--pass">
+                <button class="text2 form__button form__button--dados">Alterar dados</button>
+                <button class="text2 form__button form__button--delete">Deletar usuário</button>
+            </form>
+        </div>
+
+        <section class="main__sectionFirst">
+            <div class="section__text">
+                <span class="text3">
+                    Olá, dev!
+                </span>
+
+                <h1 class="title1"> Bem vindo a sua área</h1>
+
+                <p class="text1">Aqui é o local onde você consegue ver sobre a sua empresa e seus colegas de
+                    departamento.</p>
+            </div>
+
+            <div class="section__img">
+                <img src="/src/assets/programmer.jpg" alt="office">
+            </div>
+
+        </section>
+
+
+        <div class="section__div--info">
+            <h1 class="title1">Sua área</h1>
+
+            <div class="main__youCompanie">
+                <h2 class="title2 ">Sua empresa</h2>
+            </div>
+
+            <div class="main__youDepartment">
+                <h2 class="title2 ">Seu departamento</h2>
+            </div>
+
+            <div class="main__departmentFunc">
+                <h2 class="title2 ">Funcionários do Departamento</h2>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer__all">
+            <div class="footer__first-colunm">
+                <h2 class="title2">Kenzie Empresas</h2>
+
+                <div class="footer__network">
+                    <span class="text2"><strong>Siga nossas redes sociais</strong></span>
+                    <img src="/src/assets/facebook (1).png" alt="Facebook">
+                    <img src="/src/assets/instagram.png" alt="Instagram">
+                    <img src="/src/assets/linkedin.png" alt="Linkedin">
+                    <img src="/src/assets/twitter.png" alt="Twitter">
+                </div>
+            </div>
+
+            <div class="footer__second-colunm">
+                <span class="text2"> <strong>Institucional</strong></span>
+                <p class="text2">Sobre nós</p>
+                <p class="text2">Carreiras</p>
+                <p class="text2">Ética</p>
+                <p class="text2">Privacidade</p>
+            </div>
+
+
+            <div class="footer__third-colunm">
+                <span class="text2"> <strong>Escritórios</strong></span>
+                <figure>
+                    <img src="/src/assets/pin.png" alt="localização">
+                    <p class="text2">Salvador</p>
+                </figure>
+
+                <figure>
+                    <img src="/src/assets/pin.png" alt="localização">
+                    <p class="text2">Rio de Janeiro</p>
+                </figure>
+
+                <figure>
+                    <img src="/src/assets/pin.png" alt="localização">
+                    <p class="text2">São Paulo</p>
+                </figure>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="/src/controllers/scriptUser.js"></script>
+</body>
+
+</html>

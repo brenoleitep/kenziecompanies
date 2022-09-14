@@ -1,0 +1,133 @@
+.section__contract,
+.section__department,
+.section__sector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    overflow-x: auto;
+
+}
+
+.section__contract h2 {
+    text-align: center;
+}
+
+.section__contract--div,
+.section__department--div,
+.section__sector--div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.section__contract--li,
+.section__department--li,
+.section__sector--li {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 180px;
+    height: 200px;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--brand1);
+    color: var(--whiteFixed);
+    border-radius: 3px;
+}
+
+.section__department ul,
+.section__sector ul,
+.section__contract ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.section__department h2,
+.section__sector h2 {
+    text-align: center;
+}
+
+.header__texts {
+    display: none;
+    pointer-events: none;
+}
+
+.displayFlex {
+    height: 100vh;
+    background: #ffff;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    top: 88px;
+    left: 0px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 1s ease;
+    pointer-events: all;
+    gap: 10px;
+}
+
+.displayFlex span {
+    height: 60px;
+    text-align: center;
+}
+
+.header__img img {
+    width: 28px;
+    height: 28px;
+}
+
+.btnHire {
+    width: 130px;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    .section__companie {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 720px;
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .section__companie--ul {
+        display: flex;
+        flex-direction: row;
+        overflow-y: none;
+        flex-wrap: wrap;
+    }
+
+    .section__contract,
+    .section__department,
+    .section__sector {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 560px;
+        width: 100%;
+        gap: 10px;
+        overflow-x: auto;
+
+    }
+
+}
